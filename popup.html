@@ -1,0 +1,41 @@
+
+<html>
+
+<head>
+	<link type="text/css" rel = "stylesheet" href= "stylesheet.css"/>
+</head>
+
+
+<body>
+<script src="script.js">
+
+</script>
+
+
+
+<div id="one">
+
+</div>
+
+<div id="two">
+
+</div>
+
+<script>
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 9)];
+    }
+	
+	return color;
+}
+document.getElementById("one").style.backgroundColor = getRandomColor();
+document.getElementById("two").style.backgroundColor = getRandomColor();
+
+</script>
+
+</body>
+
+</html>
